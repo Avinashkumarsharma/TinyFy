@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tiny.fy</title>
+  <link rel="stylesheet" href="{{ MEDIA_URL }}style.css" type="text/css">
+  </head>
+
+<body>
+	<div id="header">
+  	</div>
+  	
+  	<div id="main">
+	<div id="container">
+		<div id="logo">
+			<a href=""><img src="{{ MEDIA_URL }}logo.png"  alt="tiny.fy"/></a>
+			
+		</div>
+		<div id="urlfield">
+				<form action="" method="post">
+				{% csrf_token %}
+					<input id="inputef" type="url" name="longurl" value="{{ urlo }}"/>
+
+					
+				</form>
+				<form id="surl">
+					<label for="shorturl">URL</label>
+					<input id="shorturl" type="url"  name="shorturl" value="{{ shorturl }}"  />
+				</form>
+			</div>
+	</div>
+ <!--container div above -->
+ </div>
+ 
+ <!-- main div above-->
+</body>
+</html>
